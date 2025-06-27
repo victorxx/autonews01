@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Meta SEO Básico -->
+  <title>AutoNews - Notícias e Lançamentos do Mundo Automotivo</title>
+  <meta name="description" content="Fique por dentro das últimas notícias, lançamentos e tendências do mundo dos carros. Informações atualizadas para apaixonados por automóveis." />
+  <meta name="keywords" content="carros, notícias automotivas, lançamentos, indústria automotiva, tendências automotivas, carros novos" />
+  <meta name="author" content="Seu Nome" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://seudominio.com/auto-news" />
+
+  <!-- Meta para idiomas e localização -->
+  <meta http-equiv="content-language" content="pt-BR" />
+  <meta name="geo.region" content="BR-SP" />
+  <meta name="geo.placename" content="São Paulo" />
+  <meta name="geo.position" content="-23.55052;-46.633308" />
+  <meta name="ICBM" content="-23.55052, -46.633308" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="AutoNews - Notícias e Lançamentos do Mundo Automotivo" />
+  <meta property="og:description" content="Fique por dentro das últimas notícias, lançamentos e tendências do mundo dos carros." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://seudominio.com/auto-news" />
+  <meta property="og:image" content="https://seudominio.com/images/og-auto-news.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AutoNews - Notícias e Lançamentos do Mundo Automotivo" />
+  <meta name="twitter:description" content="Fique por dentro das últimas notícias, lançamentos e tendências do mundo dos carros." />
+  <meta name="twitter:image" content="https://seudominio.com/images/twitter-auto-news.jpg" />
+  <meta name="twitter:site" content="@seutwitter" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+    .slider {
+      max-width: 1000px;
+      margin: 20px auto;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .slides {
+      display: flex;
+      width: 400%;
+      animation: slide 16s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0%   { transform: translateX(0%); }
+      25%  { transform: translateX(-100%); }
+      50%  { transform: translateX(-200%); }
+      75%  { transform: translateX(-300%); }
+      100% { transform: translateX(0%); }
+    }
+    .noticias {
+      max-width: 1000px;
+      background: #fff;
+      margin: 30px auto;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .noticia {
+      margin-bottom: 30px;
+    }
+    .noticia h2 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: #111;
+    }
+    .noticia p {
+      color: #555;
+      font-size: 1rem;
+      margin: 0;
+    }
+    footer {
+      background: #111;
+      color: #ddd;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .noticia h2 {
+        font-size: 1.2rem;
+      }
+    }
+    #ads {
+      color: white; /* texto branco para destacar */
+      font-size: large; /* tamanho agradável para botões */
+      position: fixed;
+      bottom: -30px;
+      left: 0%;
+      background-color: blueviolet;
+      border-radius: 8px; /* bordas arredondadas padrão */
+      border: none;
+      padding: 50px 66px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra leve */
+      transition: background-color 0.3s ease;
+      width: 10%;
+      text-align: center;
+      z-index: 1000;
+    }
+    #ads a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    /* Link WhatsApp estilizado */
+    .whatsapp-link {
+      display: inline-block;
+      background-color: #25D366;
+      color: white !important;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-link:hover,
+    .whatsapp-link:focus {
+      background-color: #1ebe57;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header role="banner">
+    <h1>AutoNews</h1>
+    <p>As principais notícias do mundo automotivo</p>
+  </header>
+
+  <main role="main" aria-label="Conteúdo principal">
+    <section class="slider" aria-label="Galeria de imagens de carros">
+      <div class="slides">
+        <img src="anuncie.jpg" alt="Carro esportivo moderno" />
+        <img src="anuncie.jpg" alt="Carro de luxo" />
+        <img src="anuncie.jpg" alt="Carro conceito futurista" />
+        <img src="clique.png" alt="Carro conceito futurista" />
+      </div>
+    </section>
+
+    <section style="text-align:center; margin: 20px 0;">
+      <a href="https://wa.me/5527999860405" target="_blank" rel="noopener noreferrer" class="whatsapp-link" aria-label="Fale conosco pelo WhatsApp">
+        📱 Fale conosco pelo WhatsApp
+      </a>
+      <br>
+      <br>
+      ou envie um sms 5527999860405
+    </section>
+            <article class="noticia" aria-labelledby="noticia1-title">
+            <h2 id="noticia1-title">Brasil Investe em Infraestrutura para Veículos Elétricos</h2>
+            <p>O governo brasileiro anunciou um plano nacional para instalar 10 mil pontos de recarga até 2026.</p>
+            </article>
+
+            <article class="noticia" aria-labelledby="noticia2-title">
+            <h2 id="noticia2-title">Parceria entre BYD e Shell vai Criar Rede de Eletropostos</h2>
+            <p>A joint venture pretende instalar 600 estações de recarga em oito grandes cidades brasileiras.</p>
+            </article>
+
+            <article class="noticia" aria-labelledby="noticia3-title">
+            <h2 id="noticia3-title">Rio de Janeiro Inaugura Primeiro Eletroposto Público</h2>
+            <p>Estação de 500 kW foi instalada na Barra da Tijuca e funcionará 24 horas por dia.</p>
+            </article>
+
+            <article class="noticia" aria-labelledby="noticia4-title">
+            <h2 id="noticia4-title">Montadoras Investem em Modelos Híbridos com Etanol</h2>
+            <p>Empresas como Toyota e Stellantis apostam na combinação de eletricidade e biocombustível como transição.</p>
+            </article>
+
+            <article class="noticia" aria-labelledby="noticia5-title">
+            <h2 id="noticia5-title">BYD Constrói Polo de Produção de EVs na Bahia</h2>
+            <p>Fábrica em Camaçari terá capacidade para até 300 mil carros elétricos por ano até 2028.</p>
+            </article>
+
+
+    <section class="noticias" aria-label="Notícias automotivas recentes">
+      <article class="noticia" aria-labelledby="noticia1-title">
+        <h2 id="noticia1-title">Lançamento do Novo Modelo Elétrico Revoluciona o Mercado</h2>
+        <p>O novo carro elétrico da fabricante XYZ promete autonomia de 600 km com uma única carga, além de tecnologias avançadas de assistência ao motorista.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia2-title">
+        <h2 id="noticia2-title">Tendências de Design para Carros em 2025</h2>
+        <p>Designs minimalistas e sustentáveis ganham espaço nas novas gerações de automóveis, combinando estética com eficiência energética.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia3-title">
+        <h2 id="noticia3-title">Mercado de Carros Usados Cresce 15% no Último Ano</h2>
+        <p>Com a alta dos preços dos veículos novos, o mercado de usados vem apresentando crescimento significativo e atraindo mais compradores.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia4-title">
+        <h2 id="noticia4-title">Tecnologia de Condução Autônoma Avança em Novos Modelos</h2>
+        <p>Grandes fabricantes lançam veículos com níveis avançados de direção autônoma, aumentando a segurança e o conforto nas estradas.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia5-title">
+        <h2 id="noticia5-title">Carros Híbridos Ganham Popularidade nas Grandes Cidades</h2>
+        <p>Combinação de motor elétrico e a combustão ajuda a reduzir emissões e economizar combustível, principalmente no trânsito urbano.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia6-title">
+        <h2 id="noticia6-title">Montadoras Investem em Carros Sustentáveis e Materiais Recicláveis</h2>
+        <p>A indústria automotiva adota práticas ecológicas, desde o design até a produção, com foco em sustentabilidade ambiental.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia7-title">
+        <h2 id="noticia7-title">Eventos Automotivos Voltando com Força Após a Pandemia</h2>
+        <p>Salões e feiras de automóveis retomam atividades presenciais, apresentando novidades e conectando apaixonados por carros.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia8-title">
+        <h2 id="noticia8-title">Novos Modelos SUVs Compactos Atraem Jovens Consumidores</h2>
+        <p>SUVs menores conquistam o mercado por oferecerem estilo, versatilidade e preços acessíveis para o público jovem.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia9-title">
+        <h2 id="noticia9-title">Carros Elétricos Barateiam com Novas Tecnologias de Baterias</h2>
+        <p>Avanços nas baterias de lítio e novas soluções tecnológicas reduzem o custo dos veículos elétricos para consumidores.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia10-title">
+        <h2 id="noticia10-title">Aumento da Infraestrutura para Veículos Elétricos nas Cidades</h2>
+        <p>Governos e empresas ampliam a rede de pontos de recarga para atender à crescente frota de carros elétricos.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia11-title">
+        <h2 id="noticia11-title">Carros Clássicos São Destaque em Leilões Internacionais</h2>
+        <p>Modelos raros e bem conservados alcançam preços recordes, movimentando colecionadores e entusiastas.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia12-title">
+        <h2 id="noticia12-title">Indústria Automotiva Investe em Inteligência Artificial para Manutenção</h2>
+        <p>Ferramentas baseadas em IA ajudam na detecção precoce de falhas e oferecem manutenção preventiva eficiente.</p>
+      </article>
+
+      <article class="noticia" aria-labelledby="noticia13-title">
+        <h2 id="noticia13-title">Carros Personalizados Ganham Espaço entre Jovens e Entusiastas</h2>
+        <p>Customização de veículos cresce como hobby e estilo de vida, com eventos específicos e tendências inovadoras.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    &copy;
+  </footer>
+
+  <div id="ads">
+    <a href="https://vpserp.vercel.app/" target="_blank" rel="noopener noreferrer">
+        CONFIRA ESSAS SOLUÇÕES DE TI
+    </a>
+    <br>
+    <br>
+    <br />
+    <a href="https://creditopessoal.vercel.app/" target="_blank" rel="noopener noreferrer">
+        CRÉDITO PESSOAL E SEGUROS
+    </a>
+  </div>
+
+</body>
+</html>
