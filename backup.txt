@@ -193,6 +193,7 @@
       <br>
       ou envie um sms 5527999860405
     </section>
+           <section class="noticias" aria-label="Notícias automotivas recentes">
             <article class="noticia" aria-labelledby="noticia1-title">
             <h2 id="noticia1-title">Brasil Investe em Infraestrutura para Veículos Elétricos</h2>
             <p>O governo brasileiro anunciou um plano nacional para instalar 10 mil pontos de recarga até 2026.</p>
@@ -217,7 +218,7 @@
             <h2 id="noticia5-title">BYD Constrói Polo de Produção de EVs na Bahia</h2>
             <p>Fábrica em Camaçari terá capacidade para até 300 mil carros elétricos por ano até 2028.</p>
             </article>
-
+           </section>
 
     <section class="noticias" aria-label="Notícias automotivas recentes">
       <article class="noticia" aria-labelledby="noticia1-title">
